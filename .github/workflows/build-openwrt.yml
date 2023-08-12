@@ -11,9 +11,6 @@
 name: Build OpenWrt
 
 on:
-  push:
-    branches: 
-      - master
   schedule:
     - cron: 0 4 * * 0
     
