@@ -181,7 +181,7 @@ jobs:
         files: ${{ env.FIRMWARE }}/*
 
     - name: 删除workflow runs
-      uses: Mattraks/delete-workflow-runs@main
+      uses: GitRML/delete-workflow-runs@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         repository: ${{ github.repository }}
