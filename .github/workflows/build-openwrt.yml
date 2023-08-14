@@ -180,11 +180,11 @@ jobs:
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
-    - name: 删除workflow runs
-      uses: GitRML/delete-workflow-runs@main
-      with:
-        retain_days: 1
-        keep_minimum_runs: 3
+  #  - name: 删除workflow runs
+    #  uses: GitRML/delete-workflow-runs@main
+    #  with:
+      #  retain_days: 1
+      #  keep_minimum_runs: 3
 
     - name: 删除旧Releases
       uses: dev-drprasad/delete-older-releases@v0.2.1
